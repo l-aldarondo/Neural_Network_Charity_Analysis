@@ -84,24 +84,39 @@ Using TensorFlow, optimize your model in order to achieve a target predictive ac
 Data Preprocessing:
 
 * What variable(s) are considered the target(s) for your model?
-    * .
+    * 'IS_SUCCESSFUL'
 
 * What variable(s) are considered to be the features for your model?
-    * .
+    * 'APPLICATION_TYPE', 'CLSASSIFICATION', 'NAME'
 
 * What variable(s) are neither targets nor features, and should be removed from the input data?
-    * .
+    * 'STATUS', 'SPECIAL_CONSIDERATIONS'
 
 Compiling, Training, and Evaluating the Model:
 
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
-    * .
+
+    * D2 we had 2 hidden layers, activation layer = 'relu', ....
+
+    * D3_1: 3 hidden layers, activation layer = 'relu', ....
+
+    * D3_2: 4 hidden layers, activatin layer = 'sigmoid', ....
+
+    * D3_3: 4 hidden layers, activation layer = 'sigmoid', .....
 
 * Were you able to achieve the target model performance?
-    * .
+
+    * We achived our targeted model performance with D3_3 with a 79% accuracy
 
 * What steps did you take to try and increase model performance?
-    * .
+
+    * Dropped low information columns: 'STATUS', 'SPECIAL_CONSIDERATIONS'
+
+    * Binned low occurence value counts:  'APPLICATION_TYPE', 'CLSASSIFICATION'
+
+    * Binned 'NAME' into another category for all values equal or less than 5
+
+    * No change to the model
 
 ## Results Overview:
 
@@ -207,7 +222,7 @@ The model is optimized, and the predictive accuracy is increased to over 75%, or
 <br/>
 
 
-![D3_3 model evaluation](./Images/feature_importances_df.png)
+![D3_3 model evaluation](./Images/model_evaluation_D3_3.png)
  
 <sub> Figure (1.9) D3_3 model evaluation
 
