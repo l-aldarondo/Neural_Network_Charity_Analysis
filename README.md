@@ -79,50 +79,9 @@ Using TensorFlow, optimize your model in order to achieve a target predictive ac
 <br/>
 
 
-## Results: 
+## Results Overview:
 
-Data Preprocessing:
-
-* What variable(s) are considered the target(s) for your model?
-    * 'IS_SUCCESSFUL'
-
-* What variable(s) are considered to be the features for your model?
-    * 'APPLICATION_TYPE', 'CLSASSIFICATION', 'NAME'
-
-* What variable(s) are neither targets nor features, and should be removed from the input data?
-    * 'STATUS', 'SPECIAL_CONSIDERATIONS'
-
-Compiling, Training, and Evaluating the Model:
-
-* How many neurons, layers, and activation functions did you select for your neural network model, and why?
-
-* D2 (Original Model): **2** hidden layers, activation layer = **'relu'**
-
-    * D3_1: **3** hidden layers, activation function = **'relu'**, increased hidden layers to improve performance
-
-    * D3_2: **4** hidden layers, activatin function = **'sigmoid'**, changed the activation function to improve performance
-
-    * D3_3: **4** hidden layers, activation function = **'sigmoid'**, maintained the model the same because decided to use binned for 'NAME' feature.
-
-* Were you able to achieve the target model performance?
-
-    * We achived our targeted model performance on our third attempt (D3_3) with an accuracy of **79%** 
-
-* What steps did you take to try and increase model performance?
-
-    * Dropped epoch from 100 to 50
-
-    * Dropped low information columns: 'STATUS', 'SPECIAL_CONSIDERATIONS'
-
-    * Binned low occurence value counts:  'APPLICATION_TYPE', 'CLSASSIFICATION'
-
-    * Binned 'NAME' into another category for all values equal or less than 5
-
-    * No change to the model
-
-### Results Overview:
-
-#### D1: Preprocessing Data for a Neural Network Model
+### D1: Preprocessing Data for a Neural Network Model
 
 The following preprocessing steps have been performed on the crypto_df DataFrame:
 
@@ -237,7 +196,49 @@ The model is optimized, and the predictive accuracy is increased to over 75%, or
 
 <br/>
 
-### Additional analysis:
+## Results Discussion:
+
+Data Preprocessing:
+
+* What variable(s) are considered the target(s) for your model?
+    * 'IS_SUCCESSFUL'
+
+* What variable(s) are considered to be the features for your model?
+    * 'APPLICATION_TYPE', 'CLSASSIFICATION', 'NAME'
+
+* What variable(s) are neither targets nor features, and should be removed from the input data?
+    * 'STATUS', 'SPECIAL_CONSIDERATIONS'
+
+Compiling, Training, and Evaluating the Model:
+
+* How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+* D2 (Original Model): **2** hidden layers, activation layer = **'relu'**
+
+    * D3_1: **3** hidden layers, activation function = **'relu'**, increased hidden layers to improve performance
+
+    * D3_2: **4** hidden layers, activatin function = **'sigmoid'**, changed the activation function to improve performance
+
+    * D3_3: **4** hidden layers, activation function = **'sigmoid'**, maintained the model the same because decided to use binned for 'NAME' feature.
+
+* Were you able to achieve the target model performance?
+
+    * We achived our targeted model performance on our third attempt (D3_3) with an accuracy of **79%** 
+
+* What steps did you take to try and increase model performance?
+
+    * Dropped epoch from 100 to 50
+
+    * Dropped low information columns: 'STATUS', 'SPECIAL_CONSIDERATIONS'
+
+    * Binned low occurence value counts:  'APPLICATION_TYPE', 'CLSASSIFICATION'
+
+    * Binned 'NAME' into another category for all values equal or less than 5
+
+    * No change to the model
+
+
+### Additional analysis: RandoForest benchmark comparison:
 
 A becnchmark analysis was performed using RandomForest for comparison with another model:
 
