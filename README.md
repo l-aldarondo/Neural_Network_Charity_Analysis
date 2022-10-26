@@ -99,7 +99,7 @@ The following preprocessing steps have been performed on the crypto_df DataFrame
 
 * The final DataFrame is shown below, Figure 1.1
 
-![X_scaled](./Images/X_test_scaled.png)
+![X_test_scaled](./Images/X_test_scaled.png)
  
 <sub> Figure (1.1) X_test_scaled DataFrame: X DataFrame have been standardized using the StandardScaler fit_transform() function.
 
@@ -126,13 +126,13 @@ The compiled model and model evaluation are shown below, Figure 1.2 -1.3
  
  ![compiled_model_D2](./Images/compiled_model_D2.png)
  
-<sub> Figure (1.2) X_pca_df DataFrame
+<sub> Figure (1.2) Compiled model for D2
 
 <br/>
 
 ![model_evaluation](./Images/model_evaluation_D2.png)
  
-<sub> Figure (1.2) X_pca_df DataFrame
+<sub> Figure (1.3) D2 model evaluatio
 
 <br/>
 
@@ -144,13 +144,13 @@ The model is optimized, and the predictive accuracy is increased to over 75%, or
 
 ![compiled_model_D3_1](./Images/compiled_model_D3_1.png)
  
-<sub> Figure (1.3) Elbow curve
+<sub> Figure (1.4) Compiled model D3_1
 
 <br/>
 
 ![Elbow_curve](./Images/model_evaluation_D3_1.png)
  
-<sub> Figure (1.3) Elbow curve
+<sub> Figure (1.5) D3_1 model evaluation
 
 <br/>
 
@@ -160,15 +160,15 @@ The model is optimized, and the predictive accuracy is increased to over 75%, or
 
 * Additional hidden layers are added
 
-![Elbow_curve](./Images/compiled_model_D3_2.png)
+![compiled_model_D3_2](./Images/compiled_model_D3_2.png)
  
-<sub> Figure (1.3) Elbow curve
+<sub> Figure (1.6) Compiled Model D3_2
 
 <br/>
 
-![Elbow_curve](./Images/model_evaluation_D3_2.png)
+![D3_2 model evaluation](./Images/model_evaluation_D3_2.png)
  
-<sub> Figure (1.3) Elbow curve
+<sub> Figure (1.7) D3_2 model evaluation
 
 <br/>
 
@@ -176,18 +176,16 @@ The model is optimized, and the predictive accuracy is increased to over 75%, or
 
 * The activation function of hidden layers or output layers is changed for optimization
 
-![Elbow_curve](./Images/compiled_model_D3_3.png)
+![compiled_model_D3_3](./Images/compiled_model_D3_3.png)
  
-<sub> Figure (1.3) Elbow curve
+<sub> Figure (1.8) D3_3 Compiled Model D3_3
 
 <br/>
-* Top Ten features_df
 
-![clustered_df](./Images/feature_importances_df.png)
+
+![D3_3 model evaluation](./Images/feature_importances_df.png)
  
-<sub> Figure (1.3) Clustered_df DataFrame.
-
-<br/>.3) Elbow curve
+<sub> Figure (1.9) D3_3 model evaluation
 
 <br/>
 
@@ -196,40 +194,41 @@ The model is optimized, and the predictive accuracy is increased to over 75%, or
 
 * The results are saved to an HDF5 file
 
+<br/>
 
 ### Additional analysis:
 
 A becnchmark analysis was performed using RandomForest for comparison with another model:
 
-* confusion_matrix
+* Confusion_Matrix
 
-![Elbow_curve](./Images/RandomForestClasifier_ss.png)
+![Confusion_Matrix](./Images/RandomForestClasifier_ss.png)
  
-<sub> Figure (1.3) Elbow curve
+<sub> Figure (1.10) RandomForestClasifier - ConfusionMatrix
 
 <br/>
 
-* clasification_report
+* Clasification_report
 
-![K_Means_algorithm](./Images/clasification_report.png)
+![Clasification_report](./Images/clasification_report.png)
  
-<sub> Figure (1.3) K-Means Algorithm: used to cluster the cryptocurrencies.
+<sub> Figure (1.11) Clasification_report
 
 <br/>
 
 * Top Ten features_df
 
-![clustered_df](./Images/feature_importances_df.png)
+![Top_Ten_features_df](./Images/feature_importances_df.png)
  
-<sub> Figure (1.3) Clustered_df DataFrame.
+<sub> Figure (1.12) Top Ten features_df
 
 <br/>
 
-* Top Ten features_df visualization
+* Top Ten features visualization
 
-![clustered_df](./Images/forest_clasifier_features_importance.png)
+![Top_Ten_features_df_visualization](./Images/forest_clasifier_features_importance.png)
  
-<sub> Figure (1.3) Clustered_df DataFrame.
+<sub> Figure (1.3) Top Ten features visualization
 
 <br/>
 
