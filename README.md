@@ -177,7 +177,7 @@ The compiled model and model evaluation are shown below, Figure 1.2 -1.3
 
 <br/>
 
-### D3_1: Clustering Cryptocurrencies Using K-means
+### D3_1:
 
 The model is optimized, and the predictive accuracy is increased to over 75%, or there is working code that makes three attempts to increase model performance using the following steps:
 
@@ -294,7 +294,7 @@ As part of this analysis a bechnark analysis using RandomForest was performed. T
 
 [scikit-learn](https://scikit-learn.org/stable/)
  
-[K-Means Elbow](https://predictivehacks.com/k-means-elbow-method-code-for-python/)
+[TensorFlow](https://www.tensorflow.org/)
 
 [matplotlib](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.savefig.html)
 
