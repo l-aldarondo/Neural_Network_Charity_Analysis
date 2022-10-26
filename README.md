@@ -81,71 +81,153 @@ Using TensorFlow, optimize your model in order to achieve a target predictive ac
 
 ## Results:
 
-### D1: Preprocessing the Data for PCA 
+### D1: Preprocessing Data for a Neural Network Model
 
-The following five preprocessing steps have been performed on the crypto_df DataFrame:
+The following preprocessing steps have been performed on the crypto_df DataFrame:
 
-* All cryptocurrencies that are not being traded are removed
+* The EIN and NAME columns have been dropped
 
-* The IsTrading column is dropped
+* The columns with more than 10 unique values have been grouped together
 
-* All the rows that have at least one null value are removed
+* The categorical variables have been encoded using one-hot encoding
 
-* All the rows that do not have coins being mined are removed
+* The preprocessed data is split into features and target arrays
 
-* The CoinName column is dropped
+* The preprocessed data is split into training and testing datasets
 
-* A new DataFrame is created that stores all cryptocurrency names from the CoinName column and retains the index from the crypto_df DataFrame
+* The numerical values have been standardized using the StandardScaler() module
 
-* The get_dummies() method is used to create variables for the text features, which are then stored in a new DataFrame, X 
+* The final DataFrame is shown below, Figure 1.1
 
-* The features from the X DataFrame have been standardized using the StandardScaler fit_transform() function
-
-The final DataFrame is shown below, Figure 1.1
-
-![X_scaled](./Images/x_scaled.png)
+![X_scaled](./Images/X_test_scaled.png)
  
-<sub> Figure (1.1) X_scaled DataFrame: X DataFrame have been standardized using the StandardScaler fit_transform() function.
+<sub> Figure (1.1) X_test_scaled DataFrame: X DataFrame have been standardized using the StandardScaler fit_transform() function.
 
 <br/>
 
 
-### D2: Reducing Data Dimensions Using PCA
+### D2: Compile, Train, and Evaluate the Model
 
-* The pca algorithm reduces the dimensions of the X DataFrame down to three principal components
-* The X_pca_df DataFrame is created and has the following three columns, PC 1, PC 2, and PC 3, and has the index from the crypto_df DataFrame
+The neural network model using Tensorflow Keras contains working code that performs the following steps:
 
-The final DataFrame is shown below, Figure 1.2
+* The number of layers, the number of neurons per layer, and activation function are defined
+
+* An output layer with an activation function is created
+
+* There is an output for the structure of the model
+
+* There is an output of the model’s loss and accuracy
+
+* The model's weights are saved every 5 epochs
+
+* The results are saved to an HDF5 file
+
+The compiled model and model evaluation are shown below, Figure 1.2 -1.3
  
- ![X_pca_df](./Images/X_pca_df.png)
+ ![compiled_model_D2](./Images/compiled_model_D2.png)
  
 <sub> Figure (1.2) X_pca_df DataFrame
 
 <br/>
 
-### D3: Clustering Cryptocurrencies Using K-means
+![model_evaluation](./Images/model_evaluation_D2.png)
+ 
+<sub> Figure (1.2) X_pca_df DataFrame
 
-The K-means algorithm is used to cluster the cryptocurrencies using the PCA data, where the following steps have been completed:
+<br/>
 
-* An elbow curve is created using hvPlot to find the best value for K
+### D3_1: Clustering Cryptocurrencies Using K-means
 
-![Elbow_curve](./Images/elbow%20curve.png)
+The model is optimized, and the predictive accuracy is increased to over 75%, or there is working code that makes three attempts to increase model performance using the following steps:
+
+* Noisy variables are removed from features
+
+![compiled_model_D3_1](./Images/compiled_model_D3_1.png)
  
 <sub> Figure (1.3) Elbow curve
 
 <br/>
 
-* Predictions are made on the K clusters of the cryptocurrencies’ data
+![Elbow_curve](./Images/model_evaluation_D3_1.png)
+ 
+<sub> Figure (1.3) Elbow curve
 
-![K_Means_algorithm](./Images/K-means%20algorithm.png)
+<br/>
+
+### D3_2
+
+* Additional neurons are added to hidden layers
+
+* Additional hidden layers are added
+
+![Elbow_curve](./Images/compiled_model_D3_2.png)
+ 
+<sub> Figure (1.3) Elbow curve
+
+<br/>
+
+![Elbow_curve](./Images/model_evaluation_D3_2.png)
+ 
+<sub> Figure (1.3) Elbow curve
+
+<br/>
+
+## D3_3
+
+* The activation function of hidden layers or output layers is changed for optimization
+
+![Elbow_curve](./Images/compiled_model_D3_3.png)
+ 
+<sub> Figure (1.3) Elbow curve
+
+<br/>
+* Top Ten features_df
+
+![clustered_df](./Images/feature_importances_df.png)
+ 
+<sub> Figure (1.3) Clustered_df DataFrame.
+
+<br/>.3) Elbow curve
+
+<br/>
+
+
+* The model's weights are saved every 5 epochs
+
+* The results are saved to an HDF5 file
+
+
+### Additional analysis:
+
+A becnchmark analysis was performed using RandomForest for comparison with another model:
+
+* confusion_matrix
+
+![Elbow_curve](./Images/RandomForestClasifier_ss.png)
+ 
+<sub> Figure (1.3) Elbow curve
+
+<br/>
+
+* clasification_report
+
+![K_Means_algorithm](./Images/clasification_report.png)
  
 <sub> Figure (1.3) K-Means Algorithm: used to cluster the cryptocurrencies.
 
 <br/>
 
-* A new DataFrame is created with the same index as the crypto_df DataFrame and has the following columns: Algorithm, ProofType, TotalCoinsMined, TotalCoinSupply, PC 1, PC 2, PC 3, CoinName, and Class.
+* Top Ten features_df
 
-![clustered_df](./Images/clustered_df.png)
+![clustered_df](./Images/feature_importances_df.png)
+ 
+<sub> Figure (1.3) Clustered_df DataFrame.
+
+<br/>
+
+* Top Ten features_df visualization
+
+![clustered_df](./Images/forest_clasifier_features_importance.png)
  
 <sub> Figure (1.3) Clustered_df DataFrame.
 
