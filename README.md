@@ -279,13 +279,13 @@ A becnchmark analysis was performed using RandomForest for comparison with anoth
 On this project, we worked primarily with , and  build on this by using using Tensorflow Keras to create a neural network model which employs many different features to predict where to make investments. The original model achived an accuracy of **72%**
  
 Then we did 3 attempts to optimize our model with the following results:
-* Attempt #1: **72%**
-* Attempt #2: **73%**
+* Attempt #1: **73%**
+* Attempt #2: **74%**
 * Attempt #3: **79%**
 
 As we can see with the first to attempts we did not achived our targeted goal of 75%, but in our 3rd attempt we achived the target with a **79%**
 
-As part of this analysis a bechnark analysis using RandomForest was performed. The model achived an accuracy of 78%, meeting our target. Therefore this would be another model that could be use for our predictive model.
+As part of this analysis a bechnark analysis using RandomForest was performed. The model achived an accuracy of **78**%, meeting our target. Therefore this would be another model that could be use for our predictive model.
 
 
 ## References
