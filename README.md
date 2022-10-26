@@ -106,7 +106,7 @@ Compiling, Training, and Evaluating the Model:
 
 * Were you able to achieve the target model performance?
 
-    * We achived our targeted model performance with D3_3 with a **79%** accuracy
+    * We achived our targeted model performance on our third attempt (D3_3) with an accuracy of **79%** 
 
 * What steps did you take to try and increase model performance?
 
@@ -120,9 +120,9 @@ Compiling, Training, and Evaluating the Model:
 
     * No change to the model
 
-## Results Overview:
+### Results Overview:
 
-### D1: Preprocessing Data for a Neural Network Model
+#### D1: Preprocessing Data for a Neural Network Model
 
 The following preprocessing steps have been performed on the crypto_df DataFrame:
 
