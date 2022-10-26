@@ -96,19 +96,21 @@ Compiling, Training, and Evaluating the Model:
 
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
-    * D2 we had 2 hidden layers, activation layer = 'relu', ....
+* D2 (Original Model): **2** hidden layers, activation layer = **'relu'**
 
-    * D3_1: 3 hidden layers, activation layer = 'relu', ....
+    * D3_1: **3** hidden layers, activation function = **'relu'**, increased hidden layers to improve performance
 
-    * D3_2: 4 hidden layers, activatin layer = 'sigmoid', ....
+    * D3_2: **4** hidden layers, activatin function = **'sigmoid'**, changed the activation function to improve performance
 
-    * D3_3: 4 hidden layers, activation layer = 'sigmoid', .....
+    * D3_3: **4** hidden layers, activation function = **'sigmoid'**, maintained the model the same because decided to use binned for 'NAME' feature.
 
 * Were you able to achieve the target model performance?
 
-    * We achived our targeted model performance with D3_3 with a 79% accuracy
+    * We achived our targeted model performance with D3_3 with a **79%** accuracy
 
 * What steps did you take to try and increase model performance?
+
+    * Dropped epoch from 100 to 50
 
     * Dropped low information columns: 'STATUS', 'SPECIAL_CONSIDERATIONS'
 
@@ -274,13 +276,16 @@ A becnchmark analysis was performed using RandomForest for comparison with anoth
 
 ## Summary
 
-On this project, we worked primarily with the K-means algorithm, the main unsupervised algorithm that groups similar data into clusters. And  build on this by speeding up the process using principal component analysis (PCA), which employs many different features to reduce the dimensions of the DataFrame. 
+On this project, we worked primarily with , and  build on this by using using Tensorflow Keras to create a neural network model which employs many different features to predict where to make investments. The original model achived an accuracy of **72%**
  
-Then using the K-means algorithm, we created an elbow curve using hvPlot to find the best value for K. Then, runned the K-means algorithm to predict the K clusters for the cryptocurrencies’ data.
- 
-Finally we created  scatter plots with Plotly Express and hvplot, to visualize the distinct groups that correspond to the three principal components. Then created a table with all the currently tradable cryptocurrencies using the hvplot.table() function. 
- 
-The ultimate goal for this visualizations is to present the data in a story that would be interactive, easy to understanding and that provide the correct information to help the stakeholders in the decision making process. 
+Then we did 3 attempts to optimize our model with the following results:
+* Attempt #1: **72%**
+* Attempt #2: **73%**
+* Attempt #3: **79%**
+
+As we can see with the first to attempts we did not achived our targeted goal of 75%, but in our 3rd attempt we achived the target with a **79%**
+
+As part of this analysis a bechnark analysis using RandomForest was performed. The model achived an accuracy of 78%, meeting our target. Therefore this would be another model that could be use for our predictive model.
 
 
 ## References
