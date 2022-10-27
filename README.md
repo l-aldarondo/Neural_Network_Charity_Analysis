@@ -198,7 +198,7 @@ The model is optimized, and the predictive accuracy is increased to over 75%, or
 
 ## Results Discussion:
 
-Data Preprocessing:
+### Data Preprocessing:
 
 * What variable(s) are considered the target(s) for your model?
     * 'IS_SUCCESSFUL'
@@ -209,7 +209,7 @@ Data Preprocessing:
 * What variable(s) are neither targets nor features, and should be removed from the input data?
     * 'STATUS', 'SPECIAL_CONSIDERATIONS'
 
-Compiling, Training, and Evaluating the Model:
+### Compiling, Training, and Evaluating the Model:
 
 * How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
@@ -238,7 +238,7 @@ Compiling, Training, and Evaluating the Model:
     * No change to the model
 
 
-### Additional analysis: RandoForest benchmark comparison:
+## Additional analysis: RandoForest benchmark comparison:
 
 A becnchmark analysis was performed using RandomForest for comparison with another model:
 
