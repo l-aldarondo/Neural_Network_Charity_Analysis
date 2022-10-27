@@ -132,7 +132,7 @@ The compiled model and model evaluation are shown below, Figure 1.2 -1.3
 
 ![model_evaluation](./Images/model_evaluation_D2.png)
  
-<sub> Figure (1.3) D2 model evaluatio
+<sub> Figure (1.3) D2 model evaluation
 
 <br/>
 
@@ -242,11 +242,17 @@ Compiling, Training, and Evaluating the Model:
 
 A becnchmark analysis was performed using RandomForest for comparison with another model:
 
+![model_evaluation_RandomForest](./Images/model_evaluation_RandomForest.png)
+ 
+<sub> Figure (1.10) RandomForestClasifier - model evaluation
+
+<br/>
+
 * Confusion_Matrix
 
 ![Confusion_Matrix](./Images/RandomForestClasifier_ss.png)
  
-<sub> Figure (1.10) RandomForestClasifier - ConfusionMatrix
+<sub> Figure (1.11) RandomForestClasifier - ConfusionMatrix
 
 <br/>
 
@@ -254,7 +260,7 @@ A becnchmark analysis was performed using RandomForest for comparison with anoth
 
 ![Clasification_report](./Images/clasification_report.png)
  
-<sub> Figure (1.11) Clasification_report
+<sub> Figure (1.12) Clasification_report
 
 <br/>
 
@@ -262,7 +268,7 @@ A becnchmark analysis was performed using RandomForest for comparison with anoth
 
 ![Top_Ten_features_df](./Images/feature_importances_df.png)
  
-<sub> Figure (1.12) Top Ten features_df
+<sub> Figure (1.13) Top Ten features_df
 
 <br/>
 
@@ -270,7 +276,7 @@ A becnchmark analysis was performed using RandomForest for comparison with anoth
 
 ![Top_Ten_features_df_visualization](./Images/forest_clasifier_features_importance.png)
  
-<sub> Figure (1.3) Top Ten features visualization
+<sub> Figure (1.14) Top Ten features visualization
 
 <br/>
 
@@ -286,7 +292,7 @@ Then we did 3 attempts to optimize our model with the following results:
 
 As we can see with the first to attempts we did not achived our targeted goal of 75%, but in our 3rd attempt we achived the target with a **79%**
 
-As part of this analysis a bechnark analysis using RandomForest was performed. The model achived an accuracy of **78**%, meeting our target. Therefore this would be another model that could be use for our predictive model.
+As part of this analysis a bechnark analysis using RandomForest was performed. The model achived an accuracy of **78%**, meeting our target. Additionally this model runned faster and provided feature_importances information. Therefore this would be another model that could be use for our predictive model.
 
 
 ## References
