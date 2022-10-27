@@ -5,7 +5,7 @@ Neural Networks and Deep Learning Models
 
 ### Overview of Analysis
 
-This project consists of four technical analysis deliverables.
+This project consists of three technical analysis deliverables and a written report.
 
 * Deliverable 1: Preprocessing Data for a Neural Network Model
 
@@ -18,7 +18,7 @@ This project consists of four technical analysis deliverables.
 
 ### Purpose
 
-To help a foundation predict where to make investments. Using machine learning and neural networks, we’ll use the features in the provided dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by the fundation.
+To help a foundation predict where to make investments, using machine learning and neural networks, we’ll use the features in the provided dataset to create a binary classifier that is capable of predicting whether applicants will be successful if funded by the fundation.
 
 ## Resources
 
@@ -140,7 +140,7 @@ The compiled model and model evaluation are shown below, Figure 1.2 -1.3
 
 The model is optimized, and the predictive accuracy is increased to over 75%, or there is working code that makes three attempts to increase model performance using the following steps:
 
-* Noisy variables are removed from features
+* Noisy variables were removed from features
 
 ![compiled_model_D3_1](./Images/compiled_model_D3_1.png)
  
@@ -156,9 +156,9 @@ The model is optimized, and the predictive accuracy is increased to over 75%, or
 
 ### D3_2
 
-* Additional neurons are added to hidden layers
+* Additional neurons were added to hidden layers
 
-* Additional hidden layers are added
+* Additional hidden layers were added
 
 ![compiled_model_D3_2](./Images/compiled_model_D3_2.png)
  
@@ -174,7 +174,7 @@ The model is optimized, and the predictive accuracy is increased to over 75%, or
 
 ## D3_3
 
-* The activation function of hidden layers or output layers is changed for optimization
+* The activation function of hidden layers or output layers was changed for optimization
 
 ![compiled_model_D3_3](./Images/compiled_model_D3_3.png)
  
