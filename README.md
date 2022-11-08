@@ -1,6 +1,10 @@
 # Neural_Network_Charity_Analysis
 Neural Networks and Deep Learning Models
 
+![Neural_network_Image](./Images/deep_learning_2.png)
+
+<sub>Credit dataconomy
+
 ## Background
 
 ### Overview of Analysis
