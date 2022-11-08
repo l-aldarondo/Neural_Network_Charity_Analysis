@@ -3,7 +3,7 @@ Neural Networks and Deep Learning Models
 
 ![Neural_network_Image](./Images/deep_learning_2.png)
 
-<sub>Credit dataconomy
+<sub>[Image source: dataconomy](https://dataconomy.com/wp-content/uploads/2022/06/deep-learning-3.jpg)
 
 ## Background
 
